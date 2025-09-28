@@ -1,0 +1,23 @@
+# Node
+node_modules/
+frontend/node_modules/
+backend/node_modules/
+
+# Python/other
+__pycache__/
+
+# Build
+dist/
+build/
+
+# Env
+.env
+backend/.env
+
+
+# Database (you may want to keep DB local; ignore by default)
+backend/data/*.sqlite
+backend/data/database.sqlite
+
+# VSCode
+.vscode/

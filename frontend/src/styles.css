@@ -1,0 +1,42 @@
+:root{
+  --yellow: #FFB300;
+  --dark-gray: #2C2C2C;
+  --deep-black: #1A1919;
+  --beige: #FFEFCA;
+  --accent: #E88E2E;
+  --radius: 10px;
+}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, Arial, sans-serif; margin:0; background:var(--deep-black); color:#fff}
+.center{display:flex; align-items:center; justify-content:center}
+.card{background:var(--dark-gray); padding:18px; border-radius:12px; margin:12px}
+.login-card{width:360px; text-align:center}
+input{display:block; width:100%; padding:10px; margin:8px 0; border-radius:6px; border:1px solid rgba(255,255,255,0.08); background:transparent; color:#fff}
+.btn-primary{background:var(--yellow); color:var(--deep-black); border:none; padding:10px 12px; border-radius:8px; cursor:pointer}
+.btn-primary.big{padding:18px 28px; font-size:1.05rem}
+.btn-secondary{background:transparent; color:var(--yellow); border:2px solid var(--yellow); padding:10px 12px; border-radius:8px}
+.btn-ghost{background:transparent; color:#fff; border:1px solid rgba(255,255,255,0.06); padding:6px 8px}
+.btn-danger{background:#c0392b; border:none; padding:6px 8px; color:#fff}
+.topbar{display:flex; justify-content:space-between; align-items:center; padding:12px 20px; background:linear-gradient(90deg, rgba(0,0,0,0.3), rgba(0,0,0,0));}
+.brand{font-weight:700; color:var(--yellow); font-size:1.2rem}
+.welcome-hero{display:flex; gap:20px; align-items:center; padding:24px}
+.hero-left{padding:28px}
+.hero-right{flex:1}
+.layout{display:grid; grid-template-columns:240px 1fr; gap:16px}
+.sidebar{background:var(--dark-gray); padding:12px; border-right:1px solid rgba(0,0,0,0.2)}
+.side-item{padding:10px; border-radius:8px; margin-bottom:6px; cursor:pointer}
+.side-item.active{background:var(--beige); color:var(--deep-black)}
+.content{padding:20px}
+.form-inline input{width:auto; display:inline-block; margin-right:8px}
+.form-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:8px}
+.mini-table{width:100%; border-collapse:collapse}
+.mini-table th, .mini-table td{padding:8px; border-bottom:1px solid rgba(255,255,255,0.03)}
+.muted{font-size:0.85rem; opacity:0.8}
+.login-hero{
+  display:flex; align-items:center; justify-content:center; min-height:100vh;
+  background: linear-gradient(135deg, rgba(255,243,217,1) 0%, rgba(255,226,172,1) 100%);
+}
+.login-box{background:var(--deep-black); padding:28px; border-radius:12px; width:360px; color:var(--beige)}
+.login-box h2{color:var(--yellow); margin:0 0 8px 0}
+.error{color:#ff6b6b; font-weight:700; margin-top:8px}
+@media(max-width:900px){ .layout{grid-template-columns:1fr} .sidebar{order:2} }
